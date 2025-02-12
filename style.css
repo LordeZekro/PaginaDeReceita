@@ -17,6 +17,17 @@ body {
   backdrop-filter: blur(24px);
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(87, 56, 36, 0.5); /* Ajuste a cor e a opacidade aqui */
+  pointer-events: none; /* Permite interação com os elementos embaixo */
+}
 .container {
   width: 752px;
   margin: auto;
@@ -62,4 +73,15 @@ img {
 
 ul {
   color: #573a37;
+}
+
+footer{
+  font-family: Helvetica;
+  color: white;
+  padding: 48px;
+  text-align: center;
+}
+
+footer a{
+  color: white;
 }
